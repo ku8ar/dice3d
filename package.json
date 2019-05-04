@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.0"
+    "cannon": "0.6.2",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-scripts": "3.0.0",
+    "react-three-fiber": "2.0.12",
+    "three": "0.104.0",
+    "three-orbitcontrols": "2.102.1"
   },
   "scripts": {
     "start": "react-scripts start",
