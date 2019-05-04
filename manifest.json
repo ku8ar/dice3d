@@ -13,7 +13,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/dice3d?source=pwa",
+  "start_url": "/dice3d",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#008000"
