@@ -1,13 +1,16 @@
 import * as THREE from 'three'
 import * as CANNON from 'cannon'
-import React, { useCallback, useMemo, useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import { Canvas } from 'react-three-fiber'
 import { useCannon, Provider } from './useCannon'
 import Dice from './Dice'
 import Cheats from './Cheats'
 
 const rand = (min, max) => Math.floor((Math.random() * max) + min);
-const onCanvasCreated = ({ gl }) => ((gl.shadowMap.enabled = true), (gl.shadowMap.type = THREE.PCFSoftShadowMap))
+const onCanvasCreated = ({ gl }) => {
+  gl.shadowMap.enabled = true
+  gl.shadowMap.type = THREE.PCFSoftShadowMap
+}
 
 const u = 60
 const f = u / 2
@@ -31,7 +34,7 @@ const Wall = ({ position, shape }) => {
   const ref = useCannon({ mass: 0 }, body => {
     body.addShape(new CANNON.Box(new CANNON.Vec3(...shape)))
     body.position.set(...position)
-    body.quaternion.setFromAxisAngle(new CANNON.Vec3(0,0,0),-Math.PI/12);
+    body.quaternion.setFromAxisAngle(new CANNON.Vec3(0, 0, 0), -Math.PI / 12);
   })
   return (
     <mesh
@@ -44,7 +47,7 @@ const Wall = ({ position, shape }) => {
 }
 
 // it works only for this gravity and distance from walls
-const resultMatrix = {1: [4, 5, 5], 2: [4, 4, 4], 3: [4, 7, 5], 4: [3, 5, 4], 5: [3, 5, 6], 6: [4, 5, 4]}
+const resultMatrix = { 1: [4, 5, 5], 2: [4, 4, 4], 3: [4, 7, 5], 4: [3, 5, 4], 5: [3, 5, 6], 6: [4, 5, 4] }
 
 const Box = ({ position, result, shiftResult }) => {
   const ref = useCannon({ mass: 100000 }, body => {

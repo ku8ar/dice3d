@@ -1,6 +1,5 @@
 import React from 'react'
 import * as THREE from 'three'
-import * as CANNON from 'cannon'
 
 import dice1 from './img/dice-1.png'
 import dice2 from './img/dice-2.png'
@@ -13,7 +12,7 @@ const imgs = [dice1, dice2, dice3, dice4, dice5, dice6]
 
 const loader = new THREE.TextureLoader()
 const loaders = imgs.map(img => loader.load(img))
-const materials = loaders.map(ldr => new THREE.MeshBasicMaterial({map: ldr}))
+const materials = loaders.map(ldr => new THREE.MeshBasicMaterial({map: ldr }))
 
 const Dice = React.forwardRef((_, ref) => {
     return (

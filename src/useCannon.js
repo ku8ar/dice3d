@@ -16,7 +16,7 @@ export function Provider({ children }) {
   return <context.Provider value={world} children={children} />
 }
 
-export function useCannon({ ...props }, fn, deps = []) {
+export function useCannon({ ...props }, fn) {
   const ref = useRef()
   const world = useContext(context)
   const [body] = useState(() => new CANNON.Body(props))
@@ -24,8 +24,7 @@ export function useCannon({ ...props }, fn, deps = []) {
     fn(body)
     world.addBody(body)
     return () => world.removeBody(body)
-  }, deps)
-
+  }, [])
   useRender(() => {
     if (ref.current) {
       ref.current.position.copy(body.position)
