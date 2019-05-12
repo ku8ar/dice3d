@@ -64,7 +64,7 @@ const Box = ({ position, result, shiftResult }) => {
 }
 
 export default function App() {
-  const [isUp, setIsUp] = useState(false)
+  const [isUp, setIsUp] = useState(true)
   const setUp = useCallback(() => setIsUp(false), [])
   const setDown = useCallback(() => setIsUp(true), [])
 
