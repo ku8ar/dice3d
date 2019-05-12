@@ -1,21 +1,20 @@
 {
   "files": {
     "main.css": "/dice3d/static/css/main.def84f48.chunk.css",
-    "main.js": "/dice3d/static/js/main.03facadc.chunk.js",
-    "main.js.map": "/dice3d/static/js/main.03facadc.chunk.js.map",
+    "main.js": "/dice3d/static/js/main.11f025de.chunk.js",
+    "main.js.map": "/dice3d/static/js/main.11f025de.chunk.js.map",
     "runtime~main.js": "/dice3d/static/js/runtime~main.0a50a876.js",
     "runtime~main.js.map": "/dice3d/static/js/runtime~main.0a50a876.js.map",
     "static/js/2.6430daf5.chunk.js": "/dice3d/static/js/2.6430daf5.chunk.js",
     "static/js/2.6430daf5.chunk.js.map": "/dice3d/static/js/2.6430daf5.chunk.js.map",
     "index.html": "/dice3d/index.html",
-    "precache-manifest.77b9f14bc9090156d8c7570391da9dc7.js": "/dice3d/precache-manifest.77b9f14bc9090156d8c7570391da9dc7.js",
+    "precache-manifest.c735ea6c123ba7ef210209a5b03847ea.js": "/dice3d/precache-manifest.c735ea6c123ba7ef210209a5b03847ea.js",
     "service-worker.js": "/dice3d/service-worker.js",
     "static/css/main.def84f48.chunk.css.map": "/dice3d/static/css/main.def84f48.chunk.css.map",
-    "static/media/dice-1.png": "/dice3d/static/media/dice-1.0492dbc9.png",
-    "static/media/dice-2.png": "/dice3d/static/media/dice-2.2339c625.png",
-    "static/media/dice-3.png": "/dice3d/static/media/dice-3.43510a11.png",
-    "static/media/dice-4.png": "/dice3d/static/media/dice-4.75257529.png",
-    "static/media/dice-5.png": "/dice3d/static/media/dice-5.970e126a.png",
-    "static/media/dice-6.png": "/dice3d/static/media/dice-6.59793ed2.png"
+    "static/media/dice-2.png": "/dice3d/static/media/dice-2.92d42106.png",
+    "static/media/dice-3.png": "/dice3d/static/media/dice-3.f9134e70.png",
+    "static/media/dice-4.png": "/dice3d/static/media/dice-4.b3a70618.png",
+    "static/media/dice-5.png": "/dice3d/static/media/dice-5.98a67875.png",
+    "static/media/dice-6.png": "/dice3d/static/media/dice-6.2fb1a02d.png"
   }
 }
